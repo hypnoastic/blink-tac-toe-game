@@ -1,0 +1,43 @@
+/* Navbar Styling */
+.navbar {
+    width: 90%;
+    margin: 30px 20px 0 20px; 
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(106, 30, 176, 0.3);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 2px solid rgba(106, 30, 176);
+}
+
+.navbar-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: rgba(106, 30, 176);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+    padding-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-title:hover {
+    color: #d1b3ff;
+}
+
+.navbar-links .how-to-play-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    transition: color 0.3s;
+    padding: 0;
+}
+
+.navbar-links .how-to-play-link:hover {
+    color: #d1b3ff;
+}
