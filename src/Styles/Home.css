@@ -1,0 +1,199 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, rgba(255, 107, 107, 0.2), rgba(77, 171, 247, 0.2)); /* Light red to light blue */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+}
+
+/* Home Container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Players Section */
+.players-section {
+    margin: 40px 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Player Side Styles */
+.player-side {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Red and Blue Glass Styling */
+.red-glass {
+    border: 2px solid #ff2e2e;
+    background: linear-gradient(to bottom right, rgba(255, 107, 107, 0.2), rgba(255, 107, 107, 0.05));
+}
+
+.blue-glass {
+    border: 2px solid #0b88fa;
+    background: linear-gradient(to bottom left, rgba(77, 171, 247, 0.2), rgba(77, 171, 247, 0.05));
+}
+
+/* Category Grid (for emoji selection) */
+.category-grid {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Category Card */
+.category-card {
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 14px 18px;
+    width: 80%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: #444;
+    font-size: 1rem;
+}
+
+.category-card:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-card.selected {
+    border: 2px solid #7b2cbf;
+    background-color: #e9d8fd;
+}
+
+.category-card.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Category Title */
+.category-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Emoji Sample */
+.emoji-sample {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Start Button */
+.start-button {
+    background: #7b2cbf;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 15px;
+    padding: 14px 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.start-button:hover {
+    background-color: #6a1eb0;
+    transform: scale(1.1); /* Increases the size of the button by 10% */
+}
+/* Footer Styling */
+.footer {
+    font-size: 0.95rem;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-top: 2px solid #ddd; /* Adds a line separator */
+    position: relative;
+    bottom: 0;
+    margin-top: 130px;
+}
+
+/* Footer Text */
+.footer p {
+    font-size: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.footer a {
+    color: #7b2cbf;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.player1{
+    color: #ff2e2e;
+}
+.player2{
+    color: #0b88fa;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 950px) {
+    .players-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .player-side {
+        flex: 0 0 100%;
+        padding: 15px;
+        height: auto;
+    }
+
+    .category-card {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .start-button {
+        padding: 12px 50px;
+        font-size: 1rem;
+    }
+}
