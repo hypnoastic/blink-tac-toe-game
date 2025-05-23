@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/HowToPlay.css';
-import Navbar from '../components/Navbar.jsx';
+import Navbar from '../Components/Navbar.jsx';
 import Category from '../Assets/category.png'
 import Emoji from '../Assets/emoji.png'
 import Winner from '../Assets/win.png'
