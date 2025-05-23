@@ -167,3 +167,18 @@
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffd700, 0 0 40px #ffd700;
     }
 }
+@media (max-width: 370px) {
+    .player-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .emoji-display {
+        font-size: 24px;
+    }
+
+    .player-category {
+        font-size: 12px;
+    }
+    
+}
