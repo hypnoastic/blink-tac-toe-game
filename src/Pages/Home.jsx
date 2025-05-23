@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import emojiCategories from '../emojiCategories';
 import '../styles/Home.css';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 
 
@@ -67,9 +68,7 @@ function Home() {
 
             <button className="start-button" onClick={handleStart}>Start Game</button>
 
-            <div className="footer">
-                <p>Made by <a href="https://www.linkedin.com/in/hypnoastic" target="_blank">Yash</a></p>
-            </div>
+            <Footer/>
         </div>
     );
 }

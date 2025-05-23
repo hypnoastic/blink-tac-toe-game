@@ -1,4 +1,5 @@
 .game-container {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +18,7 @@
 
 .game-content {
     margin-top:40px;
+    margin-bottom: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,6 +146,8 @@
     animation: pulse 1s ease-in-out infinite;
     background: rgba(255, 215, 0, 0.2);
 }
+
+
 
 @keyframes pulse {
     0% { transform: scale(1); }

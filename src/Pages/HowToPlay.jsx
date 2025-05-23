@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar.jsx';
 import Category from '../Assets/category.png'
 import Emoji from '../Assets/emoji.png'
 import Winner from '../Assets/win.png'
+import Footer from "../Components/footer.jsx";
 
 function HowToPlay() {
     return (
@@ -43,6 +44,7 @@ function HowToPlay() {
                     <Link to="/" className="back-home-btn">← Back to Home</Link>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }

@@ -4,6 +4,7 @@ import '../Styles/Game.css';
 import WinBanner from '../Components/WinBanner';
 import Navbar from '../Components/Navbar';
 import emojiCategories from '../EmojiCategories';
+import Footer from '../Components/Footer';
 
 const Game = () => {
     const location = useLocation();
@@ -166,6 +167,7 @@ const Game = () => {
                 </div>
             </div>
 
+
             {showWinBanner && (
                 <WinBanner
                     winner={winner}
@@ -174,7 +176,9 @@ const Game = () => {
                     isUltimateWin={ultimateWinner !== null}
                 />
             )}
+            <Footer/>
         </div>
+
     );
 };
 

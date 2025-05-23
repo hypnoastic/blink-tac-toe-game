@@ -27,17 +27,17 @@
 }
 
 .navbar-title:hover {
-    color: #d1b3ff;
+    color: white;
 }
 
 .navbar-links .how-to-play-link {
     text-decoration: none;
     font-size: 1rem;
-    color: white;
+    color: rgba(106, 30, 176);
     transition: color 0.3s;
     padding: 0;
 }
 
 .navbar-links .how-to-play-link:hover {
-    color: #d1b3ff;
+    color: white;
 }
