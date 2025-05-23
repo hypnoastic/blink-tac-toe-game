@@ -1,5 +1,11 @@
 import React from 'react';
 import '../Styles/WinBanner.css';
+import buttonSound from '../Assets/sounds/button.mp3';
+
+const playSound = (src) => {
+    const audio = new window.Audio(src);
+    audio.play();
+};
 
 const WinBanner = ({ winner, onReplay, onQuit, isUltimateWin }) => {
     return (
@@ -10,10 +16,22 @@ const WinBanner = ({ winner, onReplay, onQuit, isUltimateWin }) => {
                     {isUltimateWin ? ' Wins the Game!' : ' Wins the Round!'}
                 </h2>
                 <div className="win-buttons">
-                    <button onClick={onReplay}>
+                    <button
+                        onClick={() => {
+                            playSound(buttonSound);
+                            onReplay();
+                        }}
+                    >
                         {isUltimateWin ? 'New Game' : 'Next Round'}
                     </button>
-                    <button onClick={onQuit}>Quit</button>
+                    <button
+                        onClick={() => {
+                            playSound(buttonSound);
+                            onQuit();
+                        }}
+                    >
+                        Quit
+                    </button>
                 </div>
             </div>
         </div>

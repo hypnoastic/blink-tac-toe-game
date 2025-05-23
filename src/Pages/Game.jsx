@@ -5,6 +5,9 @@ import WinBanner from '../Components/WinBanner';
 import Navbar from '../Components/Navbar';
 import EmojiCategories from '../EmojiCategories';
 import Footer from '../Components/Footer.jsx';
+import placeSound from '../Assets/sounds/place.mp3';
+import winSound from '../Assets/sounds/win.mp3';
+import gameWinSound from '../Assets/sounds/gamewin.mp3';
 
 const Game = () => {
     const location = useLocation();
@@ -52,6 +55,9 @@ const Game = () => {
     const handleClick = (index) => {
         if (board[index] || showWinBanner || ultimateWinner) return;
 
+        // Play place sound when a player puts an emoji
+        playSound(placeSound);
+
         const newBoard = [...board];
         const currentPlayer = isRedTurn ? 'red' : 'blue';
         const emoji = getRandomEmoji(isRedTurn ? redPlayer.category : bluePlayer.category);
@@ -84,17 +90,20 @@ const Game = () => {
         if (gameWinner) {
             setWinner(gameWinner);
             setShowWinBanner(true);
+            playSound(winSound);
             if (gameWinner === 'red') {
                 const newRedScore = redScore + 1;
                 setRedScore(newRedScore);
                 if (newRedScore >= WINNING_SCORE) {
                     setUltimateWinner('red');
+                    playSound(gameWinSound);
                 }
             } else {
                 const newBlueScore = blueScore + 1;
                 setBlueScore(newBlueScore);
                 if (newBlueScore >= WINNING_SCORE) {
                     setUltimateWinner('blue');
+                    playSound(gameWinSound);
                 }
             }
         } else {
@@ -120,6 +129,11 @@ const Game = () => {
 
     const handleQuit = () => {
         navigate('/');
+    };
+
+    const playSound = (src) => {
+        const audio = new window.Audio(src);
+        audio.play();
     };
 
     return (
