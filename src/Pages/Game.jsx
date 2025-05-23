@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import '../Styles/Game.css';
 import WinBanner from '../Components/WinBanner';
 import Navbar from '../Components/Navbar';
-import emojiCategories from '../EmojiCategories';
+import EmojiCategories from '../EmojiCategories';
 import Footer from '../Components/Footer';
 
 const Game = () => {
@@ -25,7 +25,7 @@ const Game = () => {
 
     // Get random emoji from category
     const getRandomEmoji = (category) => {
-        const emojis = emojiCategories[category];
+        const emojis = EmojiCategories[category];
         return emojis[Math.floor(Math.random() * emojis.length)];
     };
 
