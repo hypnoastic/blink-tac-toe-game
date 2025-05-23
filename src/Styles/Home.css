@@ -1,4 +1,4 @@
-/* Reset margin and padding for all elements */
+
 * {
     margin: 0;
     padding: 0;
@@ -123,7 +123,7 @@ body {
 
 /* Start Button */
 .start-button {
-    background: #7b2cbf;
+    background-color: #7b2cbf;
     color: white;
     font-weight: bold;
     font-size: 1.1rem;

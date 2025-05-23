@@ -1,0 +1,71 @@
+.how-to-play-page {
+    min-height: 100vh;
+    padding-top: 1rem;
+}
+
+.how-to-play-content {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.how-to-play-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 1200px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.how-to-play-card h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.how-to-play-card h3 {
+    font-weight: normal;
+    line-height: 1.5;
+    padding-left: 0.5rem;
+}
+
+.how-to-play-card ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+.how-to-play-card li {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.how-to-play-card p {
+    font-size: 1.2rem;
+}
+
+.instruction-img {
+    margin-top: 0.5rem;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.back-home-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: #7b2cbf;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-home-btn:hover {
+    background-color: #6a1eb0;
+    transform: scale(1.1);
+}
