@@ -4,7 +4,7 @@ import '../Styles/Game.css';
 import WinBanner from '../Components/WinBanner';
 import Navbar from '../Components/Navbar';
 import EmojiCategories from '../EmojiCategories';
-import Footer from '../Components/Footer';
+import Footer from '../Components/Footer.jsx';
 
 const Game = () => {
     const location = useLocation();

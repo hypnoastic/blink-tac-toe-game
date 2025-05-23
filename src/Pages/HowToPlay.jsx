@@ -5,7 +5,7 @@ import Navbar from '../Components/Navbar.jsx';
 import Category from '../Assets/category.png'
 import Emoji from '../Assets/emoji.png'
 import Winner from '../Assets/win.png'
-import Footer from "../Components/footer.jsx";
+import Footer from "../Components/Footer.jsx";
 
 function HowToPlay() {
     return (
