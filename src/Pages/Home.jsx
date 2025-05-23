@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import EmojiCategories from '../EmojiCategories';
-import '../styles/Home.css';
+import '../Styles/Home.css';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
