@@ -1,3 +1,4 @@
+/*WinBanner CSS*/
 .win-banner {
     position: fixed;
     top: 0;
@@ -9,8 +10,9 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
-}
 
+}
+/*Content*/
 .win-content {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
@@ -20,6 +22,7 @@
     animation: slideIn 0.5s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.68);
+    margin: 20px;
 }
 
 @keyframes slideIn {

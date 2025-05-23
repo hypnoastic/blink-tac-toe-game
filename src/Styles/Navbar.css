@@ -41,3 +41,14 @@
 .navbar-links .how-to-play-link:hover {
     color: white;
 }
+
+/*Responsive Css*/
+@media (max-width: 450px) {
+    .navbar-title{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .navbar-links .how-to-play-link {
+        font-size: 12px;
+    }
+}

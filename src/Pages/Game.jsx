@@ -128,11 +128,13 @@ const Game = () => {
 
             <div className="game-content">
                 <div className="player-info">
-                    <div className={`player-circle red ${isRedTurn ? 'active' : ''}`}>
-                        <div className="emoji-display">
-                            {getRandomEmoji(redPlayer?.category)}
+                    <div className="player-wrapper">
+                        <div className={`player-circle red ${isRedTurn ? 'active' : ''}`}>
+                            <div className="emoji-display">
+                                {getRandomEmoji(redPlayer?.category)}
+                            </div>
                         </div>
-                        <div className="player-score">Score: {redScore}</div>
+                        <div className="player-category">{redPlayer?.category}</div>
                     </div>
 
                     <div className="score-tracker">
@@ -146,13 +148,16 @@ const Game = () => {
                         )}
                     </div>
 
-                    <div className={`player-circle blue ${!isRedTurn ? 'active' : ''}`}>
-                        <div className="emoji-display">
-                            {getRandomEmoji(bluePlayer?.category)}
+                    <div className="player-wrapper">
+                        <div className={`player-circle blue ${!isRedTurn ? 'active' : ''}`}>
+                            <div className="emoji-display">
+                                {getRandomEmoji(bluePlayer?.category)}
+                            </div>
                         </div>
-                        <div className="player-score">Score: {blueScore}</div>
+                        <div className="player-category">{bluePlayer?.category}</div>
                     </div>
                 </div>
+
 
                 <div className="game-board">
                     {board.map((cell, index) => (

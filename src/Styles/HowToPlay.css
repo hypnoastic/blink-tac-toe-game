@@ -1,3 +1,4 @@
+/* Main Page Layout */
 .how-to-play-page {
     display: flex;
     flex-direction: column;
@@ -5,12 +6,15 @@
     padding: 20px;
 }
 
+/* Content Wrapper */
 .how-to-play-content {
     display: flex;
     justify-content: center;
     padding: 2rem;
+    width: 100%;
 }
 
+/* Instruction Card */
 .how-to-play-card {
     background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
@@ -21,6 +25,7 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
+/* Headings */
 .how-to-play-card h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -33,6 +38,7 @@
     padding-left: 0.5rem;
 }
 
+/* List */
 .how-to-play-card ul {
     list-style-type: disc;
     padding-left: 2rem;
@@ -44,10 +50,12 @@
     line-height: 1.6;
 }
 
+/* Text */
 .how-to-play-card p {
     font-size: 1.2rem;
 }
 
+/* Images */
 .instruction-img {
     margin-top: 0.5rem;
     max-width: 100%;
@@ -55,6 +63,7 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Back Button */
 .back-home-btn {
     display: inline-block;
     margin-top: 2rem;
@@ -71,3 +80,63 @@
     background-color: #6a1eb0;
     transform: scale(1.1);
 }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .how-to-play-card {
+        padding: 1.5rem;
+        margin: 30px 10px;
+    }
+
+    .how-to-play-card h1 {
+        font-size: 1.6rem;
+    }
+
+    .how-to-play-card h3 {
+        font-size: 1rem;
+    }
+
+    .how-to-play-card p {
+        font-size: 1rem;
+    }
+
+    .instruction-img {
+        max-width: 100%;
+    }
+
+    .back-home-btn {
+        padding: 8px 16px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .how-to-play-content {
+        padding: 1rem;
+    }
+
+    .how-to-play-card {
+        padding: 1rem;
+        width: 100%;
+        margin: 20px 5px;
+    }
+
+    .how-to-play-card h1 {
+        font-size: 1.4rem;
+    }
+
+    .how-to-play-card h3 {
+        font-size: 0.95rem;
+    }
+
+    .how-to-play-card p {
+        font-size: 0.95rem;
+    }
+
+    .back-home-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+

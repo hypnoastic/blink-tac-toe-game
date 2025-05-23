@@ -31,6 +31,7 @@ function Home() {
             <Navbar/>
 
             <div className="players-section">
+
                 {/* RED PLAYER */}
                 <div className="player-side red-glass">
                     <h2 className="player1">Player 1</h2>
@@ -41,8 +42,12 @@ function Home() {
                                 className={`category-card ${categoryRed === cat ? 'selected' : ''} ${categoryBlue === cat ? 'disabled' : ''}`}
                                 onClick={() => categoryBlue !== cat && setCategoryRed(cat)}
                             >
-                                <span className="category-title">{cat}</span>
-                                <span className="emoji-sample">{emojis.slice(0, 3).join(' ')}</span>
+                                <span className="category-title">{cat}</span> <br/>
+                                <span className="emoji-sample">
+                                  {emojis.slice(0, 3).map((emoji, index) => (
+                                      <span key={index} className="emoji-spaced">{emoji}</span>
+                                  ))}
+                                </span>
                             </div>
                         ))}
                     </div>
@@ -58,8 +63,12 @@ function Home() {
                                 className={`category-card ${categoryBlue === cat ? 'selected' : ''} ${categoryRed === cat ? 'disabled' : ''}`}
                                 onClick={() => categoryRed !== cat && setCategoryBlue(cat)}
                             >
-                                <span className="category-title">{cat}</span>
-                                <span className="emoji-sample">{emojis.slice(0, 3).join(' ')}</span>
+                                <span className="category-title">{cat}</span> <br/>
+                                <span className="emoji-sample">
+                                  {emojis.slice(0, 3).map((emoji, index) => (
+                                      <span key={index} className="emoji-spaced">{emoji}</span>
+                                  ))}
+                                </span>
                             </div>
                         ))}
                     </div>
